@@ -13,9 +13,15 @@ public class mainSteps {
 
 	}
 
-	@When("User login to the application")
-	public void User_login_to_the_application() {
-		System.out.println("User login to the application");
+//	@When("User login to the application with {string} and password {string}")
+//	public void User_login_to_the_application(String username, String Password) {
+//		System.out.println("username is" + username + " " + "password is" + Password);
+//
+//	}
+	@When("User login to the application with {string} and password {string} combi")
+	public void user_login_to_the_application_with_abhijeet_and_password_combi(String name, String pass) {
+
+		System.out.println(name + " " + pass);
 
 	}
 
@@ -30,4 +36,5 @@ public class mainSteps {
 		System.out.println("cards are displayed");
 
 	}
+
 }
